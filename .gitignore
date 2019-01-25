@@ -1,0 +1,11 @@
+
+# Author     KMS - Martin Dubois, ing.
+# Product    OpenNet_Public
+# File       .gitignore
+
+/.vs/
+/Import/
+
+x64/
+
+*.user
