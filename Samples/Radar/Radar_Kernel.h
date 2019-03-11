@@ -30,7 +30,7 @@ public:
     void SetOut    (cl_mem             aOut    );
 
     // ===== OpenNet::Kernel ================================================
-    virtual OpenNet::Status SetUserKernelArgs(void * aKernel);
+    virtual void SetUserKernelArgs(void * aKernel);
 
 private:
 

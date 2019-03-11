@@ -13,7 +13,7 @@ set EXPORT_FOLDER=K:\Export
 
 rem ===== Dependencies ======================================================
 
-set OPEN_NET="%EXPORT_FOLDER%\OpenNet\0.0.7_KI_Windows"
+set OPEN_NET="%EXPORT_FOLDER%\OpenNet\0.0.11_KI_Windows"
 
 rem ===== Constants =========================================================
 

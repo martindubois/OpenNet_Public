@@ -159,10 +159,7 @@ void Radar_Kernel::SetOut(cl_mem aOut)
 
 // ===== OpenNet::Kernel ====================================================
 
-// aKernel [---;RW-]
-//
-// Return  See OpenNet::Kernel::SetUserKernelArgs
-OpenNet::Status Radar_Kernel::SetUserKernelArgs(void * aKernel)
+void Radar_Kernel::SetUserKernelArgs(void * aKernel)
 {
     assert(NULL != mIn );
     assert(NULL != mOut);
@@ -176,5 +173,5 @@ OpenNet::Status Radar_Kernel::SetUserKernelArgs(void * aKernel)
     lRet = clSetKernelArg(lKernel, 2, sizeof(cl_mem), &mOut);
     assert(CL_SUCCESS == lRet);
 
-    return Kernel::SetUserKernelArgs(aKernel);
+    Kernel::SetUserKernelArgs(aKernel);
 }

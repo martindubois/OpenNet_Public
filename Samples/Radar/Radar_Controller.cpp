@@ -501,7 +501,7 @@ void Radar_Controller::Processor_GetInfo()
     mContext = reinterpret_cast<cl_context>(mProcessor->GetContext());
     assert(NULL != mContext);
 
-    mDeviceId = reinterpret_cast<cl_device_id>(mProcessor->GetDeviceId());
+    mDeviceId = reinterpret_cast<cl_device_id>(mProcessor->GetDevice());
     assert(NULL != mDeviceId);
 }
 
